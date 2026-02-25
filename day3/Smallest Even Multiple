@@ -1,0 +1,9 @@
+class Solution:
+    def smallestEvenMultiple(self, n: int) -> int:
+        a=2
+        b=n
+        if b%2==0:
+            GCD=2
+        else:
+            GCD=1
+        return int (a*b/GCD)
