@@ -1,0 +1,10 @@
+class Solution:
+    def returnToBoundaryCount(self,nums:List[int]) -> int:
+        position=0
+        count=0
+        for i in nums:
+            position=position+i
+
+            if position==0:
+                count=count+1
+        return count
